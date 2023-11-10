@@ -1,0 +1,46 @@
+* {
+  /* ancho y alto final incluiran borde y padding */
+  box-sizing: border-box;
+  /* reset */
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 1000px;
+}
+
+.card {
+  width: 400px;
+  height: 200px;
+  /* en orden de las manecillas de reloj */
+  /* top right bottom left */
+  padding: 10px 8px 5px 2px;
+  padding: 10px 5px 2px;
+  padding: 10px 5px;
+  margin: 10px 30px 15px 12px;
+  border: 1px solid #000000;
+  /* border: black 1px solid; */
+
+  /* center box */
+  margin: auto;
+
+  /* fondos */
+  background-color: peru;
+  background-image: url("https://cdn.vox-cdn.com/thumbor/1ICYd2LEdSpY3Ct6RNGndd_qJ4E=/0x0:1920x1080/1400x933/filters:focal(807x387:1113x693):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/72009235/captain_pikachu.6.jpg");
+  background-size: 500px 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; /* cover - contain */
+  /* si usan la etiqueta img, deben utilizar la propiedad object-fit para utilizar cover y contain */
+  /* background-attachment: fixed; */
+  position: relative;
+  z-index: 999;
+}
+
+.otra-caja {
+  background-color: aqua;
+  position: relative;
+  top: -20px;
+  z-index: 2;
+}
