@@ -36,6 +36,8 @@ body {
   /* background-attachment: fixed; */
   position: relative;
   z-index: 999;
+
+  box-shadow: 10px 10px 10px 10px black;
 }
 
 .otra-caja {
