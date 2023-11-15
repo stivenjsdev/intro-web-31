@@ -8,6 +8,7 @@
 
 body {
   height: 1000px;
+  /* position: relative; */
 }
 
 .card {
@@ -23,7 +24,7 @@ body {
   /* border: black 1px solid; */
 
   /* center box */
-  margin: auto;
+  margin: 20px auto;
 
   /* fondos */
   background-color: peru;
@@ -37,12 +38,43 @@ body {
   position: relative;
   z-index: 999;
 
-  box-shadow: 10px 10px 10px 10px black;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.559);
 }
 
-.otra-caja {
+.papa {
+  border: 1px solid red;
+  width: 300px;
+  height: 100px;
+  /* position: relative; */
+}
+
+.hijo-primero {
   background-color: aqua;
-  position: relative;
-  top: -20px;
   z-index: 2;
+
+  /* mover elementos */
+  position: static; /* por defecto */
+  position: relative;
+  /* top right bottom left */
+  /* bottom: 80px; */
+  top: -80px;
+}
+
+.hijo-segundo {
+  background-color: aquamarine;
+  /* width: 50px; */
+
+  position: absolute;
+
+  bottom: 20px;
+}
+
+.hijo-tercero {
+  background-color: antiquewhite;
+  z-index: 1000;
+  position: fixed;
+
+
+  bottom: 150px;
+  right: 20px;
 }
