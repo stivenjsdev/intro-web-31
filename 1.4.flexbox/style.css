@@ -1,0 +1,52 @@
+body {
+
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  border: 1px solid black;
+  width: 400px;
+  height: 100px;
+  background-color: rgb(108, 137, 57);
+  margin-bottom: 10px;
+}
+
+.item {
+  border: 1px solid black;
+  margin: 1px;
+  padding: 1px;
+  background-color: rgb(139, 179, 71);
+
+  /* si no defino la dimension del hijo tomaran por defecto el valor del padre para el cross axis */
+  /* height: 50px; */
+  /* width: 100px; */
+}
+
+.display-block {
+  display: block;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.column-reverse {
+  flex-direction: column-reverse;
+}
