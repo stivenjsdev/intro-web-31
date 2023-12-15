@@ -135,3 +135,14 @@ const personasMayoresEdad = personas.filter((elemento, indice, arreglo) => eleme
 
 console.log(personasMayoresEdad);
 console.log(personas);
+
+
+// ejemplo para no usar push
+
+function agregarVegatal(vegetales, nuevoVegetal) {
+  return [...vegetales, nuevoVegetal];
+}
+
+const nuevoVegetales = agregarVegatal(["coliflor", "lechuga", "tomate"], "arbolitos verdes");
+
+console.log(nuevoVegetales);
